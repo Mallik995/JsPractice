@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for Loop in JS</title>
+</head>
+<body>
+    <h1>Simple for Loop in JS *********</h1>
+    <div id="div1" style="margin-left: 150px;">Div here</div>
+    <h2>************for in Loop </h2>
+    <div id="div2" style="margin-left: 150px;">Div here</div>
+    <script>
+        const words=["I","love","coding","a","lot"];
+        let txt="";
+        
+        for(let i=0;i<words.length; i++){
+            
+           txt +="<li>" + words[i] +"<br>";
+            
+        }
+        document.getElementById("div1").innerHTML = txt;
+        
+        let txt2="";
+        for(let x in words){
+            txt2 +=words[x]+"<br>";
+        }
+        document.getElementById("div2").innerHTML = txt2;
+        
+    </script>
+</body>
+</html>
